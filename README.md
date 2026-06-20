@@ -1,64 +1,71 @@
-# Craques do Mundo — Landing Page GitHub
+# Craques do Mundo — Landing Page Corrigida para GitHub
 
-Página de vendas estática, editável e pronta para commit no GitHub.
+Esta versão foi corrigida para evitar imagens quebradas.
 
-## Estrutura
+## Estrutura obrigatória
+
+Ao subir para o GitHub, Netlify ou qualquer hospedagem, mantenha esta estrutura:
 
 ```txt
-craques-do-mundo-github/
-  index.html
-  style.css
-  script.js
-  assets/
-    mockup-referencia.png
-    ...assets internos da página...
-    raw-generated/
-      ...cópias das imagens individuais geradas...
+index.html
+style.css
+script.js
+package.json
+README.md
+assets/
+  todas-as-imagens.png
 ```
+
+O arquivo `index.html` precisa ficar no mesmo nível da pasta `assets`.
+
+## Erro comum
+
+Se aparecer ícone de imagem quebrada no navegador, quase sempre é porque você subiu apenas:
+
+```txt
+index.html
+style.css
+script.js
+```
+
+e esqueceu de subir a pasta:
+
+```txt
+assets/
+```
+
+Ou colocou `index.html` fora da pasta onde está `assets`.
 
 ## Como testar localmente
 
-Abra o arquivo `index.html` no navegador.
+Opção simples: abra `index.html`.
 
-Também pode rodar um servidor local:
+Opção recomendada:
 
 ```bash
-python -m http.server 8000
+python -m http.server 8080
 ```
 
-Depois acesse `http://localhost:8000`.
+Depois acesse:
+
+```txt
+http://localhost:8080
+```
+
+## Como subir no GitHub
+
+1. Crie o repositório.
+2. Envie todos os arquivos deste ZIP.
+3. Confirme que a pasta `assets` foi enviada junto.
+4. Ative GitHub Pages na branch principal.
+5. Abra o link publicado.
 
 ## Como trocar o link de compra
 
-Abra `script.js` e altere:
+Abra `script.js` e troque:
 
 ```js
 const CHECKOUT_URL = "https://seu-link-de-checkout-aqui.com";
 ```
 
-Pode usar link de checkout, WhatsApp, Pix, Kiwify, página de pagamento ou rota própria.
-
-## O que foi incluído
-
-- Página de vendas real em HTML/CSS/JS.
-- Imagens internas em `/assets`.
-- Mockup de referência em `/assets/mockup-referencia.png`.
-- Cópia das imagens individuais em `/assets/raw-generated`.
-- FAQ funcional.
-- CTAs clicáveis.
-- CTA fixo no mobile.
-- Layout responsivo.
-- Sem CDN de imagens e sem dependência externa.
-
-## Deploy
-
-Pode subir diretamente em:
-
-- GitHub Pages
-- Netlify
-- Vercel como site estático
-- Hostinger/cPanel
-
-## Observação
-
-Alguns textos e botões foram mantidos como HTML/CSS sempre que possível para edição futura. Os assets visuais criados individualmente foram incorporados como imagens locais para preservar fidelidade visual.
+pelo link real de checkout, WhatsApp, Pix ou DEPix.
