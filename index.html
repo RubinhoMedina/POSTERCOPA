@@ -1,23 +1,78 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Craques do Mundo — Kit digital de pôsteres gigantes de futebol para colorir.">
-  <title>Craques do Mundo — Kit de Pôsteres Gigantes</title>
-  <link rel="preload" href="https://files.catbox.moe/9dbonw.png" as="image">
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Craques do Mundo — Kit de Pôsteres Gigantes para Colorir</title>
+  <meta name="description" content="Baixe o kit digital Craques do Mundo com pôsteres gigantes A2 para imprimir em 4 folhas A4, montar, pintar e colecionar em casa." />
+  <meta name="theme-color" content="#061108" />
+
+  <meta property="og:title" content="Craques do Mundo — Kit de Pôsteres Gigantes para Colorir" />
+  <meta property="og:description" content="Transforme a febre das figurinhas em uma brincadeira gigante longe das telas." />
+  <meta property="og:image" content="assets/landing-craques-do-mundo.png" />
+  <meta property="og:type" content="website" />
+
+  <link rel="preload" as="image" href="assets/landing-craques-do-mundo.png" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <main>
-    <h1 class="sr-only">Craques do Mundo — Kit de Pôsteres Gigantes para Colorir</h1>
-    <div class="landing" aria-label="Página de vendas Craques do Mundo">
-      <img class="landing__image" src="https://files.catbox.moe/9dbonw.png" width="864" height="1821" alt="Landing page do Kit Digital Craques do Mundo com pôsteres gigantes A2 para colorir, benefícios, modo de uso, oferta e garantia de sete dias.">
-      <a class="cta-hotspot cta-hotspot--hero" href="#checkout" aria-label="Baixar Kit Digital Agora — ir para a oferta"></a>
-      <a class="cta-hotspot cta-hotspot--offer" id="checkout" href="#checkout" aria-label="Quero baixar meu Kit Digital agora"></a>
-      <a class="cta-hotspot cta-hotspot--final" href="#checkout" aria-label="Baixar Kit Digital Agora — voltar para a oferta"></a>
-    </div>
+  <main class="page-shell" aria-label="Página de vendas Craques do Mundo">
+    <section class="visual-page" style="--page-w: 724; --page-h: 2172;" aria-label="Landing page visual">
+      <img
+        src="assets/landing-craques-do-mundo.png"
+        width="724"
+        height="2172"
+        alt="Landing page Craques do Mundo — kit digital de pôsteres gigantes para colorir, com chamadas para baixar o kit, benefícios, como funciona, oferta, garantia, dúvidas frequentes e botão final."
+        class="landing-image"
+        fetchpriority="high"
+      />
+
+      <!-- Hotspots clicáveis sobre os CTAs da arte. Ajuste as porcentagens no CSS se trocar a imagem. -->
+      <a class="hotspot hotspot-hero" href="#" data-cta="hero" aria-label="Quero baixar o kit agora — botão principal"></a>
+      <a class="hotspot hotspot-offer" href="#" data-cta="offer" aria-label="Quero baixar meu kit agora — oferta"></a>
+      <a class="hotspot hotspot-final" href="#" data-cta="final" aria-label="Baixar kit digital agora — botão final"></a>
+
+      <!-- Hotspots de FAQ: como a arte é imagem, esses botões abrem respostas reais em modal. -->
+      <button class="hotspot hotspot-faq faq-1" data-faq="digital" aria-label="Abrir resposta: O produto é digital ou físico?"></button>
+      <button class="hotspot hotspot-faq faq-2" data-faq="impressora" aria-label="Abrir resposta: Preciso de impressora especial?"></button>
+      <button class="hotspot hotspot-faq faq-3" data-faq="recebo" aria-label="Abrir resposta: Recebo na hora?"></button>
+      <button class="hotspot hotspot-faq faq-4" data-faq="imprimir" aria-label="Abrir resposta: Posso imprimir quantas vezes quiser?"></button>
+      <button class="hotspot hotspot-faq faq-5" data-faq="idade" aria-label="Abrir resposta: Serve para qual idade?"></button>
+    </section>
+
+    <section class="seo-content" aria-label="Conteúdo textual da página">
+      <h1>Transforme a febre das figurinhas em uma brincadeira gigante longe das telas!</h1>
+      <p>Baixe o kit digital com pôsteres A2 para seu filho imprimir, montar, pintar e colecionar em casa.</p>
+
+      <h2>Seu filho ama futebol... mas toda diversão termina na tela?</h2>
+      <p>Figurinhas, vídeos, joguinhos, celular... agora imagine transformar essa paixão em uma atividade criativa, manual e divertida.</p>
+
+      <h2>O match perfeito com o álbum que ele já ama</h2>
+      <p>Une a paixão por figurinhas com uma atividade gigante que estimula a criatividade, desenvolve habilidades e proporciona horas de diversão longe das telas.</p>
+
+      <h2>O que vem no kit</h2>
+      <ul>
+        <li>10 pôsteres gigantes tamanho A2</li>
+        <li>Arquivos digitais em PDF</li>
+        <li>Divididos em 4 folhas A4</li>
+        <li>Alta resolução para impressão</li>
+        <li>Guia simples de montagem</li>
+        <li>Impressão ilimitada</li>
+      </ul>
+    </section>
   </main>
+
+  <a class="sticky-cta" href="#" data-cta="sticky" aria-label="Baixar kit digital agora">
+    Baixar kit agora
+  </a>
+
+  <div class="modal-backdrop" hidden></div>
+  <dialog class="faq-modal" aria-labelledby="faq-title">
+    <button class="modal-close" aria-label="Fechar">×</button>
+    <h2 id="faq-title"></h2>
+    <p id="faq-answer"></p>
+  </dialog>
+
   <script src="script.js"></script>
 </body>
 </html>
