@@ -1,78 +1,212 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Craques do Mundo — Kit de Pôsteres Gigantes para Colorir</title>
-  <meta name="description" content="Baixe o kit digital Craques do Mundo com pôsteres gigantes A2 para imprimir em 4 folhas A4, montar, pintar e colecionar em casa." />
+  <meta name="description" content="Kit digital com pôsteres gigantes A2 para imprimir em 4 folhas A4, montar, pintar e colecionar. Uma atividade criativa, educativa e longe das telas." />
   <meta name="theme-color" content="#061108" />
-
   <meta property="og:title" content="Craques do Mundo — Kit de Pôsteres Gigantes para Colorir" />
   <meta property="og:description" content="Transforme a febre das figurinhas em uma brincadeira gigante longe das telas." />
-  <meta property="og:image" content="assets/landing-craques-do-mundo.png" />
-  <meta property="og:type" content="website" />
-
-  <link rel="preload" as="image" href="assets/landing-craques-do-mundo.png" />
+  <meta property="og:image" content="assets/mockup-referencia.png" />
+  <link rel="preload" href="assets/bg-hero-estadio.png" as="image" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <main class="page-shell" aria-label="Página de vendas Craques do Mundo">
-    <section class="visual-page" style="--page-w: 724; --page-h: 2172;" aria-label="Landing page visual">
-      <img
-        src="assets/landing-craques-do-mundo.png"
-        width="724"
-        height="2172"
-        alt="Landing page Craques do Mundo — kit digital de pôsteres gigantes para colorir, com chamadas para baixar o kit, benefícios, como funciona, oferta, garantia, dúvidas frequentes e botão final."
-        class="landing-image"
-        fetchpriority="high"
-      />
+  <a class="sticky-cta" href="#comprar" aria-label="Ir para compra">Baixar kit agora</a>
 
-      <!-- Hotspots clicáveis sobre os CTAs da arte. Ajuste as porcentagens no CSS se trocar a imagem. -->
-      <a class="hotspot hotspot-hero" href="#" data-cta="hero" aria-label="Quero baixar o kit agora — botão principal"></a>
-      <a class="hotspot hotspot-offer" href="#" data-cta="offer" aria-label="Quero baixar meu kit agora — oferta"></a>
-      <a class="hotspot hotspot-final" href="#" data-cta="final" aria-label="Baixar kit digital agora — botão final"></a>
+  <header class="hero" id="topo">
+    <div class="container hero__grid">
+      <div class="hero__copy">
+        <img class="logo" src="assets/logo-craques-do-mundo.png" alt="Craques do Mundo" />
+        <h1>Transforme a <span>febre das figurinhas</span> em uma brincadeira <strong>gigante longe das telas!</strong></h1>
+        <p>Baixe o kit digital com pôsteres A2 para seu filho imprimir, montar, pintar e colecionar em casa.</p>
+        <a class="cta-img cta-link" href="#comprar" aria-label="Quero baixar o kit agora">
+          <img src="assets/cta-offer-button.png" alt="Quero baixar o kit agora" />
+        </a>
+        <div class="trust-line">
+          <span><img src="assets/download-icon.png" alt="" /> Download imediato</span>
+          <span>🖥️ Arquivo em PDF</span>
+          <span>HD Alta resolução</span>
+          <span><img src="assets/secure-icon.png" alt="" /> Garantia de 7 dias</span>
+        </div>
+      </div>
+      <div class="hero__visual" aria-label="Mockup do produto">
+        <img class="hero-poster" src="assets/poster-a2.png" alt="Pôster A2 para colorir" />
+        <img class="hero-box" src="assets/product-box.png" alt="Box digital do kit" />
+        <img class="hero-a4" src="assets/poster-a4-grid.png" alt="Pôster dividido em folhas A4" />
+        <img class="hero-child" src="assets/hero-child-coloring.png" alt="Criança colorindo pôster" />
+        <img class="hero-badge hero-badge-a2" src="assets/badge-poster-a2.png" alt="Pôster gigante A2" />
+        <img class="hero-badge hero-badge-pdf" src="assets/badge-pdf.png" alt="Arquivo digital PDF" />
+        <img class="hero-badge hero-badge-a4" src="assets/badge-a4.png" alt="Dividido em 4 folhas A4" />
+        <img class="hero-badge hero-badge-10" src="assets/badge-10-posteres.png" alt="10 pôsteres incríveis" />
+      </div>
+    </div>
+  </header>
 
-      <!-- Hotspots de FAQ: como a arte é imagem, esses botões abrem respostas reais em modal. -->
-      <button class="hotspot hotspot-faq faq-1" data-faq="digital" aria-label="Abrir resposta: O produto é digital ou físico?"></button>
-      <button class="hotspot hotspot-faq faq-2" data-faq="impressora" aria-label="Abrir resposta: Preciso de impressora especial?"></button>
-      <button class="hotspot hotspot-faq faq-3" data-faq="recebo" aria-label="Abrir resposta: Recebo na hora?"></button>
-      <button class="hotspot hotspot-faq faq-4" data-faq="imprimir" aria-label="Abrir resposta: Posso imprimir quantas vezes quiser?"></button>
-      <button class="hotspot hotspot-faq faq-5" data-faq="idade" aria-label="Abrir resposta: Serve para qual idade?"></button>
+  <main>
+    <section class="flags-strip" aria-hidden="true">
+      <img src="assets/flag-strip.png" alt="" />
     </section>
 
-    <section class="seo-content" aria-label="Conteúdo textual da página">
-      <h1>Transforme a febre das figurinhas em uma brincadeira gigante longe das telas!</h1>
-      <p>Baixe o kit digital com pôsteres A2 para seu filho imprimir, montar, pintar e colecionar em casa.</p>
+    <section class="problem section-light">
+      <div class="container">
+        <h2>Seu filho ama futebol... <span>mas toda diversão termina na tela?</span></h2>
+        <p class="section-lead">Figurinhas, vídeos, joguinhos, celular... agora imagine transformar essa paixão em uma atividade criativa, manual e divertida.</p>
+        <div class="switch-grid">
+          <article class="photo-card photo-card--gray">
+            <div class="label label-dark">Muito tempo na tela</div>
+            <img src="assets/problem-screen-child.png" alt="Criança usando tablet" />
+            <img class="media-icons" src="assets/problem-media-icons.png" alt="Ícones de jogos e vídeos" />
+          </article>
+          <div class="switch-arrow">➜</div>
+          <article class="photo-card photo-card--green">
+            <div class="label label-green">Diversão que fica</div>
+            <img src="assets/problem-coloring-child.png" alt="Criança colorindo pôster de futebol" />
+          </article>
+        </div>
+        <p class="birth-line">Foi para isso que nasceu o <strong>Craques do Mundo.</strong></p>
+      </div>
+    </section>
 
-      <h2>Seu filho ama futebol... mas toda diversão termina na tela?</h2>
-      <p>Figurinhas, vídeos, joguinhos, celular... agora imagine transformar essa paixão em uma atividade criativa, manual e divertida.</p>
+    <section class="match-benefits">
+      <div class="container match-head">
+        <img class="match-emblem" src="assets/emblem-family-football.png" alt="Família e futebol" />
+        <div>
+          <h2>O match perfeito <span>com o álbum que ele já ama!</span></h2>
+          <p>Une a paixão por figurinhas com uma atividade gigante que estimula a criatividade, desenvolve habilidades e proporciona horas de diversão longe das telas e com muito futebol!</p>
+        </div>
+        <img class="field-lines" src="assets/field-lines.png" alt="" />
+      </div>
+      <div class="container benefits-grid">
+        <article class="benefit-card"><img src="assets/icon-no-phone.png" alt="" /><h3>Menos tela</h3><p>Uma atividade offline que prende a atenção sem celular.</p></article>
+        <article class="benefit-card"><img src="assets/icon-focus.png" alt="" /><h3>Mais foco</h3><p>Pintar e montar melhora concentração, paciência e coordenação.</p></article>
+        <article class="benefit-card"><img src="assets/icon-star.png" alt="" /><h3>Diversão gigante</h3><p>Muito mais envolvente do que uma folha comum.</p></article>
+        <article class="benefit-card"><img src="assets/icon-piggy.png" alt="" /><h3>Economia de verdade</h3><p>Compre uma vez e imprima quantas vezes quiser.</p></article>
+        <article class="benefit-card"><img src="assets/icon-memory.png" alt="" /><h3>Vira recordação</h3><p>Depois de pronto, o pôster pode decorar o quarto ou a sala de aula.</p></article>
+      </div>
+    </section>
 
-      <h2>O match perfeito com o álbum que ele já ama</h2>
-      <p>Une a paixão por figurinhas com uma atividade gigante que estimula a criatividade, desenvolve habilidades e proporciona horas de diversão longe das telas.</p>
+    <section class="how section-light">
+      <div class="container">
+        <h2 class="title-lines">Como funciona</h2>
+        <div class="steps">
+          <article class="step"><img class="step-number" src="assets/step-1.png" alt="1" /><img class="step-icon" src="assets/icon-cart.png" alt="" /><div><h3>Compre e baixe</h3><p>Receba o PDF imediatamente no seu e-mail.</p></div></article>
+          <img class="step-arrow" src="assets/arrow-green.png" alt="" />
+          <article class="step"><img class="step-number" src="assets/step-2.png" alt="2" /><img class="step-icon" src="assets/icon-printer.png" alt="" /><div><h3>Imprima em casa</h3><p>Cada pôster vem dividido em 4 folhas A4.</p></div></article>
+          <img class="step-arrow" src="assets/arrow-green.png" alt="" />
+          <article class="step"><img class="step-number" src="assets/step-3.png" alt="3" /><img class="step-icon" src="assets/icon-puzzle.png" alt="" /><div><h3>Monte e pinte</h3><p>Junte as folhas e crie um pôster gigante tamanho A2.</p></div></article>
+        </div>
+      </div>
+    </section>
 
-      <h2>O que vem no kit</h2>
-      <ul>
-        <li>10 pôsteres gigantes tamanho A2</li>
-        <li>Arquivos digitais em PDF</li>
-        <li>Divididos em 4 folhas A4</li>
-        <li>Alta resolução para impressão</li>
-        <li>Guia simples de montagem</li>
-        <li>Impressão ilimitada</li>
-      </ul>
+    <section class="demo-strip">
+      <div class="container">
+        <h2>Do PDF ao pôster gigante</h2>
+        <div class="demo-grid">
+          <article class="demo-item"><img src="assets/icon-pdf.png" alt="PDF pronto para baixar" /><p>PDF pronto para baixar</p></article>
+          <img class="demo-arrow" src="assets/arrow-white.png" alt="" />
+          <article class="demo-item"><img src="assets/poster-a4-grid.png" alt="Dividido em 4 folhas A4" /><p>Dividido em 4 folhas A4</p></article>
+          <img class="demo-arrow" src="assets/arrow-white.png" alt="" />
+          <article class="demo-item"><img src="assets/poster-a2.png" alt="Pôster A2 montado" /><p>Pôster A2 montado</p></article>
+          <img class="demo-arrow" src="assets/arrow-white.png" alt="" />
+          <article class="demo-item"><img src="assets/hero-child-coloring.png" alt="Criança colorindo" /><p>É só pintar e se divertir!</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="before-after section-light">
+      <div class="container ba-grid">
+        <article class="ba-card before">
+          <h3>Antes</h3>
+          <img src="assets/problem-screen-child.png" alt="Antes: criança na tela" />
+          <p>Mais uma tarde na tela.</p>
+          <img class="emoji" src="assets/icon-sad.png" alt="triste" />
+        </article>
+        <article class="ba-card after">
+          <h3>Depois</h3>
+          <img src="assets/problem-coloring-child.png" alt="Depois: criança colorindo" />
+          <p>Horas de criatividade com futebol.</p>
+          <img class="emoji" src="assets/icon-happy.png" alt="feliz" />
+        </article>
+      </div>
+    </section>
+
+    <section class="offer" id="comprar">
+      <div class="container offer-grid">
+        <div class="offer-copy">
+          <p class="eyebrow">Combo</p>
+          <h2><span>Seleções</span> do Mundo</h2>
+          <p class="offer-lead">Tudo o que você precisa para transformar futebol em uma atividade criativa e memorável.</p>
+          <ul class="check-list">
+            <li>10 pôsteres gigantes tamanho A2</li>
+            <li>Arquivos digitais em PDF</li>
+            <li>Divididos em 4 folhas A4</li>
+            <li>Alta resolução para impressão</li>
+            <li>Guia simples de montagem</li>
+            <li>Impressão ilimitada</li>
+            <li>Uso em casa, escola e férias</li>
+          </ul>
+        </div>
+        <div class="offer-visual">
+          <img class="offer-box" src="assets/product-box.png" alt="Box do kit" />
+          <img class="offer-posters" src="assets/offer-posters.png" alt="Pôsteres do kit" />
+          <img class="offer-badge" src="assets/badge-10-posteres.png" alt="10 pôsteres incríveis" />
+        </div>
+        <a class="cta-img cta-link offer-cta" href="#" aria-label="Quero baixar meu kit agora"><img src="assets/cta-offer-button.png" alt="Quero baixar meu kit agora" /></a>
+      </div>
+    </section>
+
+    <section class="audience section-light">
+      <div class="container">
+        <h2 class="title-lines">Para quem é o kit?</h2>
+        <div class="audience-row">
+          <article><img src="assets/audience-family.png" alt="" /><h3>Pais e mães</h3><p>Mais qualidade de tempo com os filhos, longe das telas.</p></article>
+          <article><img src="assets/audience-teacher.png" alt="" /><h3>Professoras</h3><p>Recurso educativo e criativo para sala de aula e projetos.</p></article>
+          <article><img src="assets/audience-vacation.png" alt="" /><h3>Recreação e férias</h3><p>Atividade perfeita para entreter e engajar crianças.</p></article>
+          <article><img src="assets/audience-home.png" alt="" /><h3>Atividades em casa</h3><p>Fácil de preparar, econômica e extremamente divertida.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="guarantee section-light">
+      <div class="container guarantee-card">
+        <img class="guarantee-seal" src="assets/seal-guarantee-7-days.png" alt="Garantia 7 dias" />
+        <div>
+          <h2>Garantia incondicional de 7 dias. Risco zero!</h2>
+          <p>Teste o kit com tranquilidade.<br>Se não gostar, basta pedir reembolso em até 7 dias.</p>
+        </div>
+        <img class="guarantee-shield" src="assets/shield-check.png" alt="Compra segura" />
+      </div>
+    </section>
+
+    <section class="faq">
+      <div class="container">
+        <h2>Dúvidas frequentes</h2>
+        <div class="faq-grid">
+          <details><summary>O produto é digital ou físico?</summary><p>É digital. Você recebe arquivos PDF para baixar, imprimir e montar.</p></details>
+          <details><summary>Preciso de impressora especial?</summary><p>Não. Os pôsteres vêm divididos em folhas A4 comuns.</p></details>
+          <details><summary>Recebo na hora?</summary><p>Sim. Após a confirmação da compra, o acesso é liberado.</p></details>
+          <details><summary>Posso imprimir quantas vezes quiser?</summary><p>Sim, para uso pessoal, familiar ou nas suas atividades com crianças.</p></details>
+          <details><summary>Serve para qual idade?</summary><p>Principalmente para crianças de 5 a 12 anos que gostam de futebol e pintura.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <div class="container final-grid">
+        <div class="final-visual">
+          <img class="final-child" src="assets/final-child-celebrating.png" alt="Criança comemorando no campo" />
+          <img class="final-ball" src="assets/final-soccer-ball.png" alt="Bola de futebol" />
+        </div>
+        <div class="final-copy">
+          <h2>Pronto para trocar mais uma hora de tela por uma <span>aventura gigante de futebol?</span></h2>
+          <p>Diversão real. Aprendizado. Memórias inesquecíveis. Tudo isso longe das telas.</p>
+          <a class="cta-img cta-link" href="#" aria-label="Baixar kit digital agora"><img src="assets/cta-final-button.png" alt="Baixar kit digital agora" /></a>
+        </div>
+      </div>
     </section>
   </main>
-
-  <a class="sticky-cta" href="#" data-cta="sticky" aria-label="Baixar kit digital agora">
-    Baixar kit agora
-  </a>
-
-  <div class="modal-backdrop" hidden></div>
-  <dialog class="faq-modal" aria-labelledby="faq-title">
-    <button class="modal-close" aria-label="Fechar">×</button>
-    <h2 id="faq-title"></h2>
-    <p id="faq-answer"></p>
-  </dialog>
-
   <script src="script.js"></script>
 </body>
 </html>

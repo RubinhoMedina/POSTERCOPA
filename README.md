@@ -1,60 +1,64 @@
-# Craques do Mundo — Landing Page Fidelidade Máxima
+# Craques do Mundo — Landing Page GitHub
 
-Esta é a **Opção 1 — Fidelidade máxima visual**.
+Página de vendas estática, editável e pronta para commit no GitHub.
 
-A página usa a arte principal como imagem base intacta e adiciona camadas clicáveis por cima dos CTAs e FAQs.
+## Estrutura
 
-## Arquivos
+```txt
+craques-do-mundo-github/
+  index.html
+  style.css
+  script.js
+  assets/
+    mockup-referencia.png
+    ...assets internos da página...
+    raw-generated/
+      ...cópias das imagens individuais geradas...
+```
 
-- `index.html` — página principal
-- `style.css` — posicionamento, responsividade e hotspots
-- `script.js` — CTA, FAQ modal e configuração de checkout
-- `assets/landing-craques-do-mundo.png` — arte principal da página
-
-## Como testar
+## Como testar localmente
 
 Abra o arquivo `index.html` no navegador.
 
-## Como publicar na Netlify
+Também pode rodar um servidor local:
 
-1. Entre na Netlify.
-2. Clique em **Add new site**.
-3. Escolha **Deploy manually**.
-4. Arraste a pasta ou o ZIP para a Netlify.
-5. A página será publicada.
+```bash
+python -m http.server 8000
+```
 
-## Como trocar o link do botão
+Depois acesse `http://localhost:8000`.
 
-Abra o arquivo `script.js` e troque:
+## Como trocar o link de compra
+
+Abra `script.js` e altere:
 
 ```js
 const CHECKOUT_URL = "https://seu-link-de-checkout-aqui.com";
 ```
 
-Por exemplo:
+Pode usar link de checkout, WhatsApp, Pix, Kiwify, página de pagamento ou rota própria.
 
-```js
-const CHECKOUT_URL = "https://pay.kiwify.com.br/SEU-LINK";
-```
+## O que foi incluído
 
-Ou WhatsApp:
+- Página de vendas real em HTML/CSS/JS.
+- Imagens internas em `/assets`.
+- Mockup de referência em `/assets/mockup-referencia.png`.
+- Cópia das imagens individuais em `/assets/raw-generated`.
+- FAQ funcional.
+- CTAs clicáveis.
+- CTA fixo no mobile.
+- Layout responsivo.
+- Sem CDN de imagens e sem dependência externa.
 
-```js
-const CHECKOUT_URL = "https://wa.me/5511999999999?text=Quero%20baixar%20o%20Kit%20Craques%20do%20Mundo";
-```
+## Deploy
 
-## Coordenadas dos botões
+Pode subir diretamente em:
 
-Os botões são áreas invisíveis posicionadas sobre a imagem no `style.css`.
+- GitHub Pages
+- Netlify
+- Vercel como site estático
+- Hostinger/cPanel
 
-Se você trocar a imagem por outra arte, talvez precise ajustar:
+## Observação
 
-- `.hotspot-hero`
-- `.hotspot-offer`
-- `.hotspot-final`
-- `.faq-1` até `.faq-5`
-
-## Observação importante
-
-Esta versão preserva o visual da arte praticamente intacto, mas não é a melhor para SEO nem para edição de texto. 
-Para uma versão mais profissional e escalável, o ideal é a **Opção 2 — página real editável em HTML/CSS**.
+Alguns textos e botões foram mantidos como HTML/CSS sempre que possível para edição futura. Os assets visuais criados individualmente foram incorporados como imagens locais para preservar fidelidade visual.
